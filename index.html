@@ -1,12 +1,294 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>킬리렌 타래 백업 페이지</title>
-</head>
-<body>
-    <a href="html/index.html" style="font-size: 50px;">첫페이지로 바로가기</a>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>킬리렌 타래 백업 페이지</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div id="content" class="end">
+            <!-- 작품 기본 정보 -->
+            <div class="section_area_info">
+                <a href="#" class="thumbnail" onclick="clickcr(this, 'inf.illust', '', '')">
+                    <img src="./images/킬리렌_썸네일.jpg" width="200" height="276" alt="본능적인 소유욕">
+                    <span class="ico_series_edition_ex">SERIES EDITION</span>
+                </a>
+                <div class="info_area">
+                    <div class="info_top">
+
+                        <h2 class="title">킬리렌 백업 모음</h2>
+                        <div class="info_group">
+
+                            <span class="item">로맨스</span>
+
+                            <span class="item">
+                                <a href="#" class="link" onclick="clickcr(this, 'inf.writer', '', '')">로팝 & 왕밤빰</a>
+                                <span class="dot">∙</span>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="info_bottom">
+
+                        <p class="summary">
+                            <span id="summaryText">배신의 아르카누스 아카데미에서 만난 믿기지 않는 자만추 커플, 그들의 여정을 한 번 보실라우?</span>
+                            <a
+                                href="#"
+                                id="summaryMoreButton"
+                                class="link"
+                                style=""
+                                onclick="toggleSummaryPopup(event)">더보기</a>
+                        </p>
+                        <div class="link_group">
+                            <a
+                                href="html/index.html"
+                                class="link type1"
+                                onclick="clickcr(this, 'inf.first', '', '')">
+                                <strong>첫 만남 타래 보기</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont_sub_wrap">
+                <div class="cont_sub">
+
+                    <!-- 회차 목록 -->
+                    <div class="component_head">
+                        <h3 class="title">작품 회차<span class="past_number">(4)</span></h3>
+                    </div>
+
+                    <ul class="list_type2 v3">
+
+                        <li id="volume82" class="volumeComment" value="82">
+
+                            <a
+                                href="#"
+                                class="list_item"
+                                onclick="clickcr(event, 'lst.list', '1041781-82', '1')">
+                                <span class="ico_bookmark" style="display:none" id="bookmark82">책갈피</span>
+                                <div class="pic">
+
+                                    <img
+                                        src="./images/프롬.jpg"
+                                        width="100%"
+                                        alt="#4화 프롬">
+                                </div>
+                                <div class="list_info v6">
+
+                                    <p class="subj">
+                                        #4화 프롬
+                                        <span class="bullet_wrap line2"></span>
+                                    </p>
+                                    <p class="rating">
+                                        <span class="score_area"><span class="ico_star">별점</span>
+                                            <em>10.0</em>
+                                        </span>
+                                        <span class="date">2022.11.14</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li id="volume81" class="volumeComment" value="81">
+
+                            <a
+                                href="#"
+                                class="list_item"
+                                onclick="clickcr(event, 'lst.list', '1041781-81', '2')">
+                                <span class="ico_bookmark" style="display:none" id="bookmark81">책갈피</span>
+                                <div class="pic">
+
+                                    <img
+                                        src="./images/프롬신청.jpg"
+                                        width="100%"
+                                        alt="#3화 티파티">
+                                </div>
+                                <div class="list_info v6">
+
+                                    <p class="subj">
+                                        #3화 프롬 신청
+                                        <span class="bullet_wrap line2"></span>
+                                    </p>
+                                    <p class="rating">
+                                        <span class="score_area"><span class="ico_star">별점</span>
+                                            <em>10.0</em>
+                                        </span>
+                                        <span class="date">2022.11.11</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li id="volume80" class="volumeComment" value="80">
+
+                            <a
+                                href="#"
+                                class="list_item"
+                                onclick="clickcr(event, 'lst.list', '1041781-80', '3')">
+                                <span class="ico_bookmark" style="display:none" id="bookmark80">책갈피</span>
+                                <div class="pic">
+
+                                    <img
+                                        src="./images/네잎클로버.jpg"
+                                        width="100%"
+                                        alt="#2화">
+                                </div>
+                                <div class="list_info v6">
+
+                                    <p class="subj">
+                                        #2화 네잎 클로버
+                                        <span class="bullet_wrap line2"></span>
+                                    </p>
+                                    <p class="rating">
+                                        <span class="score_area"><span class="ico_star">별점</span>
+                                            <em>9.98</em>
+                                        </span>
+                                        <span class="date">2022.11.07</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li id="volume79" class="volumeComment" value="79">
+
+                            <a
+                                href="html/index.html"
+                                class="list_item"
+                                onclick="clickcr(event, 'lst.list', '1041781-79', '4')">
+                                <span class="ico_bookmark" style="display:none" id="bookmark79">책갈피</span>
+                                <div class="pic">
+
+                                    <img
+                                        src="./images/튤립.jpg"
+                                        width="100%"
+                                        alt="#1화">
+                                </div>
+                                <div class="list_info v6">
+
+                                    <p class="subj">
+                                        #1화 프롬파티 공표 후
+                                        <span class="bullet_wrap line2"></span>
+                                    </p>
+                                    <p class="rating">
+                                        <span class="score_area"><span class="ico_star">별점</span>
+                                            <em>10.0</em>
+                                        </span>
+                                        <span class="date">2022.09.30</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- paging -->
+
+                    <!-- <div class="default_paging NE=a:lst"> <strong>1<span class="blind">현재
+                    페이지</span></strong> <a href="/webnovel/list?novelId=1041781&amp;page=2"
+                    class="NPI=a:page">2</a> <a href="/webnovel/list?novelId=1041781&amp;page=3"
+                    class="NPI=a:page">3</a> <a href="/webnovel/list?novelId=1041781&amp;page=4"
+                    class="NPI=a:page">4</a> <a href="/webnovel/list?novelId=1041781&amp;page=5"
+                    class="NPI=a:page">5</a> <a href="/webnovel/list?novelId=1041781&amp;page=6"
+                    class="NPI=a:page">6</a> <a href="/webnovel/list?novelId=1041781&amp;page=7"
+                    class="NPI=a:page">7</a> <a href="/webnovel/list?novelId=1041781&amp;page=8"
+                    class="NPI=a:page">8</a> <a href="/webnovel/list?novelId=1041781&amp;page=9"
+                    class="NPI=a:page">9</a> </div> -->
+
+                    <!-- //paging -->
+
+                </div>
+                <div class="cont_aside">
+
+                    <!-- 작가의 다른 작품 -->
+
+                    <div class="aside_section">
+                        <div class="component_head">
+                            <h3 class="title">
+                                <a
+                                    href="#"
+                                    class="link"
+                                    onclick="clickcr(this, 'wir.more', '', '')">킬리렌 썰 목록</a>
+                            </h3>
+                        </div>
+                        <p>업데이트 예정입니다</p>
+                        <!-- <ul class="list_type2 v2">
+
+                            <li>
+                                <a
+                                    href="/webnovel/list?novelId=933802"
+                                    class="list_item"
+                                    onclick="clickcr(this, 'wir.list', '', '')">
+                                    <div class="pic">
+
+                                        <span class="bullet_comp">완결</span>
+
+                                        <span class="ico_series_edition">SERIES EDITION</span>
+                                        <img
+                                            src="https://novel-phinf.pstatic.net/20201127_56/novel_1606473150416LaWOz_JPEG/320%2B320.jpg?type=f100_80_2"
+                                            width="100"
+                                            height="80"
+                                            alt="이 결혼, 새로 고침">
+                                    </div>
+                                    <div class="list_info v4">
+                                        <p class="subj">
+                                            <span class="tit">이 결혼, 새로 고침</span>
+
+                                        </p>
+                                        <p class="author">
+                                            로맨스
+                                            <span class="line">|</span>
+                                            총 5회
+                                        </p>
+                                        <p class="rating">
+                                            <span class="score_area"><span class="ico_star">별점</span>9.89</span>
+                                            <span class="count">관심 1만</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="/best/list?novelId=882827"
+                                    class="list_item"
+                                    onclick="clickcr(this, 'wir.list', '', '')">
+                                    <div class="pic">
+
+                                        <span class="bullet_comp">완결</span>
+
+                                        <img
+                                            src="https://novel-phinf.pstatic.net/20200712_175/novel_1594530496132OiITq_JPEG/90.jpg?type=f100_80_2"
+                                            width="100"
+                                            height="80"
+                                            alt="이 결혼, 새로고침">
+                                    </div>
+                                    <div class="list_info v4">
+                                        <p class="subj">
+                                            <span class="tit">이 결혼, 새로고침</span>
+
+                                        </p>
+                                        <p class="author">
+                                            로맨스
+                                            <span class="line">|</span>
+                                            총 2회
+                                        </p>
+                                        <p class="rating">
+                                            <span class="score_area"><span class="ico_star">별점</span>9.95</span>
+                                            <span class="count">관심 5,457</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul> -->
+                    </div>
+                    <!-- //킬리렌 썰목록 -->
+
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
