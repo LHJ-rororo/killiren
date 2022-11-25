@@ -6145,8 +6145,6 @@ iframe {
 }
 
 .section_area_info .info_area {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -11321,3 +11319,114 @@ body .flatpickr-months .flatpickr-next-month {
     padding: 0;
 }
 
+@media only screen and (max-width: 767px) {
+    #content {
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .section_area_viewer {
+        width: 100%;
+    }
+    .viewer_header {
+        width: 100%;
+    }
+    .viewer_header .select_label {
+        display: none;
+    }
+    .viewer_container .detail_view_header,
+    .lastBtnWrap{
+        width: 80%;
+    }
+    .detail_view_content p.pic img {
+        width: 100%;
+    }
+    .detail_view_content.ft15 {
+        width: 80%;
+        font-size: 1.4rem;
+        line-height: 2.0rem;
+        white-space: inherit;
+    }
+    .viewer_footer .editor {
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .viewer_footer .editor dt,
+    .viewer_footer .editor dt .link_blog {
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .viewer_footer .editor dt .link_blog {
+        font-size: 1.4rem;
+        text-decoration: underline;
+        padding: 20px 0;
+        position: inherit;
+        top: 0;
+    }
+    
+    .viewer_footer .editor dd {
+        font-size: 1.5rem;
+    }
+
+    .viewer_footer .editor dt .link_blog::after {
+        display: none;
+    }
+    
+    /* 메인페이지 */
+
+    .section_area_info {
+        width: 100%;
+    }
+    .section_area_info .info_area .summary {
+        display: flex;
+        flex-direction: column;
+    padding-right: 0;
+    }
+    .section_area_info .info_area .summary .link {
+        position: inherit;
+    }
+    .cont_sub {
+    width: 100%;
+    }
+    .cont_aside {
+        display: none;
+    }
+    .aside_section {
+        display: none;
+    }
+    .section_area_info .info_area .title,
+    .section_area_info .info_area .title+.info_group {
+    max-width: initial;
+    }
+    .section_area_info .info_area .link_group .link.type1 {
+        width: 100%;
+        margin-right: 0;
+    }
+    .list_type2.v3 .list_item .list_info {
+        width: 100%;
+    }
+    #content.main {
+        padding-bottom: 100px;
+        overflow-x: hidden;
+    }
+    .section_area_info.maininfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_area_info .thumbnail {
+        margin: 0 auto;
+    }
+    .section_area_info .info_area {
+        height: auto;
+        padding: 20px 20px 0;
+        text-align: center;
+    }
+    .cont_sub_wrap.lstSubWrap {
+        padding: 0 20px;
+    }
+    }
+    
+    
+    
